@@ -1,0 +1,14 @@
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/bin/Debug/net8.0/MarysCandyShop
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/bin/Debug/net8.0/MarysCandyShop.deps.json
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/bin/Debug/net8.0/MarysCandyShop.runtimeconfig.json
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/bin/Debug/net8.0/MarysCandyShop.dll
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/bin/Debug/net8.0/MarysCandyShop.pdb
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/Debug/net8.0/MarysCandyShop.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/Debug/net8.0/MarysCandyShop.AssemblyInfoInputs.cache
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/Debug/net8.0/MarysCandyShop.AssemblyInfo.cs
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/Debug/net8.0/MarysCandyShop.csproj.CoreCompileInputs.cache
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/Debug/net8.0/MarysCandyShop.dll
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/Debug/net8.0/refint/MarysCandyShop.dll
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/Debug/net8.0/MarysCandyShop.pdb
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/Debug/net8.0/MarysCandyShop.genruntimeconfig.cache
+/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/Debug/net8.0/ref/MarysCandyShop.dll
