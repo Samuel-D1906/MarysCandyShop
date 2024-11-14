@@ -12,3 +12,18 @@
 /Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/Debug/net8.0/MarysCandyShop.pdb
 /Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/Debug/net8.0/MarysCandyShop.genruntimeconfig.cache
 /Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/Debug/net8.0/ref/MarysCandyShop.dll
+C:\Users\Delac\dev\Private Projekte\bin\Debug\net8.0\MarysCandyShop.exe
+C:\Users\Delac\dev\Private Projekte\bin\Debug\net8.0\MarysCandyShop.deps.json
+C:\Users\Delac\dev\Private Projekte\bin\Debug\net8.0\MarysCandyShop.runtimeconfig.json
+C:\Users\Delac\dev\Private Projekte\bin\Debug\net8.0\MarysCandyShop.dll
+C:\Users\Delac\dev\Private Projekte\bin\Debug\net8.0\MarysCandyShop.pdb
+C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\MarysCandyShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\MarysCandyShop.AssemblyInfoInputs.cache
+C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\MarysCandyShop.AssemblyInfo.cs
+C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\MarysCandyShop.csproj.CoreCompileInputs.cache
+C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\MarysCandyShop.sourcelink.json
+C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\MarysCandyShop.dll
+C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\refint\MarysCandyShop.dll
+C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\MarysCandyShop.pdb
+C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\MarysCandyShop.genruntimeconfig.cache
+C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\ref\MarysCandyShop.dll

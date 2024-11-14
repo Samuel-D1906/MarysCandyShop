@@ -8,24 +8,32 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/samuel/.nuget/packages/": {}
+    "C:\\Users\\Delac\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/MarysCandyShop.csproj",
+      "projectUniqueName": "C:\\Users\\Delac\\dev\\Private Projekte\\MarysCandyShop.csproj",
       "projectName": "MarysCandyShop",
-      "projectPath": "/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/MarysCandyShop.csproj",
-      "packagesPath": "/Users/samuel/.nuget/packages/",
-      "outputPath": "/Users/samuel/Development/Entwicklung/Projekte/C#/MarysCandyShop/obj/",
+      "projectPath": "C:\\Users\\Delac\\dev\\Private Projekte\\MarysCandyShop.csproj",
+      "packagesPath": "C:\\Users\\Delac\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Delac\\dev\\Private Projekte\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/samuel/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Delac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -38,6 +46,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -59,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/8.0.1/libexec/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
