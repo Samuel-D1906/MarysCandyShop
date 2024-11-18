@@ -20,6 +20,7 @@
       "packagesPath": "C:\\Users\\Delac\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Delac\\dev\\Private Projekte\\obj\\",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
