@@ -27,3 +27,6 @@ C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\refint\MarysCandyShop.dll
 C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\MarysCandyShop.pdb
 C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\MarysCandyShop.genruntimeconfig.cache
 C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\ref\MarysCandyShop.dll
+C:\Users\Delac\dev\Private Projekte\bin\Debug\net8.0\Spectre.Console.dll
+C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\MarysCandyShop.csproj.AssemblyReference.cache
+C:\Users\Delac\dev\Private Projekte\obj\Debug\net8.0\MarysCan.C8C89EAD.Up2Date

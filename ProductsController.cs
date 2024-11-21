@@ -3,16 +3,22 @@
 public class ProductsController
 {
 
-    internal List<string> GetProducts()
+    internal List<Products> GetProducts()
     {
-        var products = new List<string>();
+        var products = new List<Products>();
         try
         {
             using StreamReader reader = new(Configuration.docPath);
+            reader.ReadLine(); // discard firstline
             var line = reader.ReadLine();
             while (line != null)
             {
-                products.Add(line);
+                string[] parts = line.Split(',');
+                var product = new Products(int.Parse(parts[0]));
+                product.Name = parts[1];
+                product.Price= decimal.Parse(parts[2]);
+                
+                products.Add(product);
                 line = reader.ReadLine();
             }
         }
@@ -25,17 +31,21 @@ public class ProductsController
         return products;
     }
     
-    internal void AddProduct()
+    internal void AddProduct(Products product)
     {
-        Console.WriteLine("Product name:");
-        var product = Console.ReadLine();
+        var id = GetProducts().Count;
         try
         {
-            using (StreamWriter outputFile = new(Configuration.docPath))
+            using (StreamWriter outputFile = new(Configuration.docPath, true))
             {
-         
-                
-                outputFile.WriteLine(product!.Trim(), true);
+
+                if (outputFile.BaseStream.Length == 0)
+                {
+                    outputFile.WriteLine("Id,Type,Name,Price, CocoaPercentage, Shape");
+                }
+
+                var csvLine = $"{id}, {name}, {price}";
+                outputFile.WriteLine(csvLine);
                 
             }
 
@@ -49,7 +59,7 @@ public class ProductsController
         }
     }
     
-    internal void AddProducts(List<string> products)
+    internal void AddProducts(List<Products> products)
     {
         
         try
@@ -59,7 +69,7 @@ public class ProductsController
 
                 foreach (var product in products)
                 {
-                    outputFile.WriteLine(product.Trim());
+                    outputFile.WriteLine($"{product.Id}, {product.Name}, {product.Price}");
                 }
                 
                 

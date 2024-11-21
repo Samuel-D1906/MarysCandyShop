@@ -1,4 +1,7 @@
-﻿namespace MarysCandyShop;
+﻿using System.Reflection.Metadata;
+using Spectre.Console;
+
+namespace MarysCandyShop;
 
 public static class UserInterface
 {
@@ -12,28 +15,35 @@ public static class UserInterface
         {
             PrintHeader();
 
-            var usersChoice = Console.ReadLine()!.Trim().ToUpper();
+            var usersChoice = AnsiConsole.Prompt(
+                new SelectionPrompt<Enums.MainMenuOptions>().Title("What would you like to do?").AddChoices(
+                    Enums.MainMenuOptions.ViewProducts,
+                    Enums.MainMenuOptions.AddProduct,
+                    Enums.MainMenuOptions.UpdateProduct,
+                    Enums.MainMenuOptions.DeleteProduct,
+                    Enums.MainMenuOptions.QuitProgram));
             var menuMessage = "Press any key  To Go Back to Menu";
 
             switch (usersChoice)
             {
-                case "A":
-                    productsController.AddProduct();
+                case Enums.MainMenuOptions.AddProduct:
+                    var product = GetProductInput();
+                    productsController.AddProduct(product);
                     Console.WriteLine(menuMessage);
                     break;
-                case "D":
+                case Enums.MainMenuOptions.DeleteProduct:
                     productsController.DeleteProduct("User chose D");
                     Console.WriteLine(menuMessage);
                     break;
-                case "V":
+                case Enums.MainMenuOptions.ViewProducts:
                     var products = productsController.GetProducts();
                     ViewProducts(products);
                     break;
-                case "U":
+                case Enums.MainMenuOptions.UpdateProduct:
                     productsController.UpdateProduct("User chose U");
                     Console.WriteLine(menuMessage);
                     break;
-                case "Q":
+                case Enums.MainMenuOptions.QuitProgram:
                     Console.WriteLine("Goodbye");
                     isMenuRunning = false;
                     break;
@@ -50,13 +60,13 @@ public static class UserInterface
         }
     }
 
-    internal static void ViewProducts(List<string> products)
+    internal static void ViewProducts(List<Products> products)
     {
         Console.WriteLine(divide);
 
         foreach (var product in products)
         {
-            Console.WriteLine(product);
+            Console.WriteLine($"{product.Id},{product.Name}, {product.Price},");
         }
         Console.WriteLine(divide);
     }
@@ -70,7 +80,7 @@ public static class UserInterface
             const decimal todayProfit = 5.5m;
             const bool targetAchieved = false;
             var daysSinceOpening = Helpers.GetDaysSinceOpening();
-            var menu = GetMenu();
+            
 
             Console.WriteLine(title);
             Console.WriteLine(divide);
@@ -79,23 +89,51 @@ public static class UserInterface
             Console.WriteLine("Today's profit: " + todayProfit + "$");
             Console.WriteLine("Today's target achieved: " + targetAchieved);
             Console.WriteLine(divide);
-            Console.WriteLine(menu);
+            
         }
 
 
 
     }
 
-    private static string GetMenu()
+    private static Products GetProductInput()
     {
-        var menu = "Choose one option:\n"
-                   + 'V' + " to view products\n"
-                   + 'A' + " to add products\n"
-                   + 'D' + " to delete products\n"
-                   + 'U' + " to update products\n"
-                   + 'Q' + " to Quit \n";
-        return menu;
+        Console.WriteLine("Product name:");
+        var name = Console.ReadLine();
+        
+        Console.WriteLine("Product Price:");
+        var price = decimal.Parse(Console.ReadLine()!);
+        var type = AnsiConsole.Prompt(
+            new SelectionPrompt<Enums.ProductType>().Title("Product Type")
+                .AddChoices(
+                    Enums.ProductType.Lollipop,
+                    Enums.ProductType.ChocolateBar));
+        if (type == Enums.ProductType.ChocolateBar)
+        {
+            Console.WriteLine("Cocoa %");
+            var cocoa = int.Parse(Console.ReadLine()!);
+
+            return new ChocolateBar()
+            {
+                Name = name,
+                Price = price,
+                CocoaPercentage = cocoa
+            };
+        }
+        
+        Console.WriteLine("Shape: ");
+        var shape = Console.ReadLine();
+
+        
+                return new Lollipop
+                {
+                    Name = name,
+                    Price = price,
+                    Shape = shape
+                };
     }
+
+    
 }
     
     

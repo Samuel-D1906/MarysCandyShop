@@ -2,6 +2,10 @@
 
 UserInterface.RunMainMenu();
 
+var chocolateBar = new ChocolateBar();
+
+
+
 
 
 
